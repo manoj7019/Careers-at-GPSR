@@ -70,6 +70,7 @@ p {
 .career-hero-section p {
     text-shadow: 1px 1px 10px black;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 
 .career-hero-section button {
@@ -132,6 +133,7 @@ p {
 
 .why-gpsr-section-cards h3 {
     color: darkgreen;
+    font-size: 22px;
 }
 
 .why-gpsr-section-cards .card {
@@ -225,4 +227,261 @@ p {
     margin: 0 16px;
     align-items: flex-start;
     border-radius: 8px;
+}
+
+/* Life At GPSR */
+
+
+
+
+
+/* Work Life Balance */
+.career-work-life-balance {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 64px 0;
+}
+
+.career-work-life-balance .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.career-work-life-balance h2 {
+    color: darkgreen;
+}
+
+.career-work-life-balance p {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    line-height: 32px;
+    /* font-weight: 500; */
+}
+
+.career-work-life-balance-slider {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.career-work-life-balance-slider .images {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide 30s linear infinite;
+}
+
+.career-work-life-balance-slider .images2 {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: reverse-slide 30s linear infinite;
+}
+
+.career-work-life-balance-slider .images img,
+.career-work-life-balance-slider .images2 img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 8px;
+    border-radius: 8px;
+}
+
+@keyframes slide{
+    from {
+        transform: translateX(0)
+    } to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes reverse-slide{
+    from {
+        transform: translateX(-50%)
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 300px;
+}
+
+.grid1 img {
+    height: 100%;
+}
+
+/* Projects based on Waste - Section  */
+
+.employee-benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 0;
+}
+
+.employee-benefits-container h2 {
+    color: darkgreen;
+    margin-bottom: 64px;
+}
+
+/* .employee-benefits-container p {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 600;
+    margin: 8px 0 64px 0;
+    line-height: 32px;
+} */
+
+.employee-benefits-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 32px; */
+    margin: 0 auto;
+    /* padding: 32px; */
+    margin-bottom: -16px;
+}
+
+.employee-benefits-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    padding: 32px;
+    width: calc((1200px)/4);
+    text-align: center;
+    /* background: white;
+    border-radius: 8px; */
+}
+
+.employee-benefits-button:hover {
+    filter: grayscale(0)
+}
+
+.active-employee-benefits-button {
+    filter: grayscale(0);
+    background: rgb(238, 238, 238);
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s ease;
+}
+
+.active-employee-benefits-button p {
+    font-weight: 700;
+}
+
+.employee-benefits-button-icon {
+    width: 80px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+}
+
+.employee-benefits-button:hover .employee-benefits-button-icon {
+    transform: scale(1.25);
+}
+
+.employee-benefits-info-container {
+    /* background: hsla(120, 100%, 20%, 0.1); */
+    border-radius: 0 0 8px 8px;
+}
+
+.employee-benefits-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 1200px;
+    padding: 64px;
+    margin: 0 auto;
+    transition: 0.3s;
+    line-height: 24px;
+    background: rgb(238, 238, 238);
+    border-radius: 8px;
+}
+
+/* #msw-waste-button, #pre-waste-button {
+    filter: grayscale(100%);
+} */
+
+#accomodation-info, #loan-info, #meal-info {
+    display: none;
+}
+
+.employee-benefits-info img {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.employee-benefits-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.employee-benefits-info div p{
+    font-size: 16px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+/* Last Call to Action section*/
+
+.career-last-cta-section {
+    background: black;
+    margin: 0 auto;
+    padding: 64px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.career-last-cta-section > p {
+    font-size: 24px;
+}
+
+.career-last-cta-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: darkgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    margin: 16px auto;
+}
+
+.career-last-cta-section button:hover {
+    transform: scale(1.125);
+    background: white;
+    color: darkgreen;
 }
